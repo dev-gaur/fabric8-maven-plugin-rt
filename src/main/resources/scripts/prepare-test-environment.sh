@@ -58,3 +58,9 @@ oc cluster up --version=${OC_VERSION}
 sleep 10
 oc login -u developer -p developer
 echo "Configured OpenShift cluster : ${OC_VERSION}"
+
+# Install Snapshot version of fabric8-maven-plugin in local .m2 repository
+cd /tmp/
+git clone https://github.com/fabric8io/fabric8-maven-plugin
+cd fabric8-maven-plugin/
+mvn clean install -DskipTests

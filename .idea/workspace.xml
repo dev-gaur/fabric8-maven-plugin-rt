@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c8ea7500-7e25-4578-905e-421da0c26d38" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/fabric8/maven/rt/BaseBoosterIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/fabric8/maven/rt/BaseBoosterIT.java" afterDir="false" />
-    </list>
+    <list default="true" id="c8ea7500-7e25-4578-905e-421da0c26d38" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -222,6 +218,9 @@
     <history-entry file="VertxConfigmapBoosterIT_deploy_vertx_app_once - 2018.07.03 at 16h 43m 29s.xml">
       <configuration name="VertxConfigmapBoosterIT.deploy_vertx_app_once" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="VertxConfigmapBoosterIT_deploy_vertx_app_once - 2018.07.03 at 16h 57m 45s.xml">
+      <configuration name="VertxConfigmapBoosterIT.deploy_vertx_app_once" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-1" width="1922" height="1030" extended-state="6" />
@@ -240,7 +239,7 @@
       <window_info anchor="bottom" id="Terminal" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" />

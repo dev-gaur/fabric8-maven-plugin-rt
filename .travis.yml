@@ -1,0 +1,36 @@
+# We use Travis for the following tasks:
+# - Download and install `kubectl`, `oc` CLI client tools
+# - Configure docker daemon to run insecure registry for OpenShift cluster
+# - Execute `oc cluster up` with different environments (metrics profile) : v3.6.0, v3.6.1, v3.7.0
+# - Updating the Sonarqube stats when not on a PR
+# - Update Codecov (codecov.io) stats for every build
+# - Regenerate the docs when commit on master (but not for a PR)
+
+matrix:
+  include:
+    - env: OC_VERSION="v3.6.0" COMMIT_ID="c4dd4cf"
+    - env: OC_VERSION="v3.6.1" COMMIT_ID="008f2d5"
+    - env: OC_VERSION="v3.7.2" COMMIT_ID="282e43f"
+
+sudo: required
+dist: trusty
+group: deprecated-2017Q4
+
+language: java
+jdk:
+  - oraclejdk8
+
+services:
+  - docker
+
+cache:
+  directories:
+    - $HOME/.m2
+
+install: ./src/main/resources/scripts/prepare-test-environment.sh
+
+before_script: mvn clean install -DskipTests
+
+script:
+  # Profile jacoco switches on jacoco coverages, regession-test for running regreesion tests on fabric8/OpenShift.io quickstart projects
+  - mvn clean install 
