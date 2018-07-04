@@ -1,4 +1,6 @@
-# Fabric8 Maven Plugin Regression tests
+## Fabric8 Maven Plugin Regression tests
+
+[![Travis](https://secure.travis-ci.org/rohanKanojia/fabric8-maven-plugin-rt.png)](http://travis-ci.org/rohanKanojia/fabric8-maven-plugin-rt)
 
 The core directory for fabric8-maven-plugin regression tests
 
