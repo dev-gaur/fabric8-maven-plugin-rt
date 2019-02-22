@@ -54,10 +54,10 @@ sudo service docker restart
 echo "Configured Docker daemon with insecure-registry"
 
 #make OpenShift up & running
-oc cluster up --version=${OC_VERSION}
+oc cluster up --version=3.11
 sleep 10
 oc login -u developer -p developer
-echo "Configured OpenShift cluster : ${OC_VERSION}"
+echo "Configured OpenShift cluster : 3.11"
 
 # Install Snapshot version of fabric8-maven-plugin in local .m2 repository
 cd /tmp/
