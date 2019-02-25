@@ -54,7 +54,7 @@ sudo service docker restart
 echo "Configured Docker daemon with insecure-registry"
 
 #make OpenShift up & running
-oc cluster up --version=3.11
+oc cluster up
 sleep 10
 oc login -u developer -p developer
 echo "Configured OpenShift cluster : 3.11"
