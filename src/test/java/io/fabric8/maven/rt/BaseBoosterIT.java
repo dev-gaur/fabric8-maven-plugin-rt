@@ -211,7 +211,6 @@ public class BaseBoosterIT {
         String baseDir = sampleRepository.getWorkTree().getAbsolutePath();
         EmbeddedMaven.forProject(baseDir + "/pom.xml")
                 .setGoals(goals)
-                .setQuiet(true)
                 .setProfiles(profiles)
                 .build();
     }
